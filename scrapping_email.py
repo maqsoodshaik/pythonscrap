@@ -4,9 +4,9 @@ import json
 URL = "https://remoteok.io/api"
 keys = ["date","company","position","url","tags"]
 
-wanted = ["jenkins","docker"]
 
-def get_jobs():
+
+def get_jobs(wanted):
     resp = requests.get(URL)
     jobs_results = resp.json()
 
